@@ -5,21 +5,21 @@
 class Hookwave < Formula
   desc "Hookwave CLI — reliable webhook infrastructure for AI agents"
   homepage "https://hookwave.dev"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Hookwave/cli/releases/download/v0.1.1/hookwave_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "35d945ddee9f5e00ce4ac3cc63873b1000aa6ed2e24deec10ed77e3cfce98a25"
+      url "https://github.com/Hookwave/cli/releases/download/v0.1.2/hookwave_0.1.2_darwin_x86_64.tar.gz"
+      sha256 "2843188c84f23bc1ef8bd9a97468a9106b5f42ec483bdb5cdcbff15f93e422f1"
 
       define_method(:install) do
         bin.install "hookwave"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Hookwave/cli/releases/download/v0.1.1/hookwave_0.1.1_darwin_arm64.tar.gz"
-      sha256 "8e44d09b17e4bf70289887bb3e02fdbbfe6bedd1f43ac6df6b247562a180d340"
+      url "https://github.com/Hookwave/cli/releases/download/v0.1.2/hookwave_0.1.2_darwin_arm64.tar.gz"
+      sha256 "c1582b74f2d536c87606eadd69f589eaf345deadfdee0f50ddca68e263e2aea0"
 
       define_method(:install) do
         bin.install "hookwave"
@@ -29,15 +29,15 @@ class Hookwave < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Hookwave/cli/releases/download/v0.1.1/hookwave_0.1.1_linux_x86_64.tar.gz"
-      sha256 "fe9a41180b549bc3d2010c53d66bb84ae936ef3b6a806bae6eafb7883bcf12e7"
+      url "https://github.com/Hookwave/cli/releases/download/v0.1.2/hookwave_0.1.2_linux_x86_64.tar.gz"
+      sha256 "244213c1ad14e51800e9a2ff23e0faf79342b46b605fc591c39596b38fdf0dfb"
       define_method(:install) do
         bin.install "hookwave"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Hookwave/cli/releases/download/v0.1.1/hookwave_0.1.1_linux_arm64.tar.gz"
-      sha256 "99f6afdee9c99bf26fc5604493f3de1335270d7cc99b852de311c6a260ccb827"
+      url "https://github.com/Hookwave/cli/releases/download/v0.1.2/hookwave_0.1.2_linux_arm64.tar.gz"
+      sha256 "026b13cafce25d1e6f0d5e4fca716cd8efb2791cbc831c03431e1915df3ca159"
       define_method(:install) do
         bin.install "hookwave"
       end
